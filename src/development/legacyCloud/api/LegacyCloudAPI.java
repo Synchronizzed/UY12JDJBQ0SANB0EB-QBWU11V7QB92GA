@@ -34,11 +34,13 @@ public class LegacyCloudAPI {
 		itemMeta.setLore(lore);
 		item.setItemMeta(itemMeta);
 		for(Player player : Bukkit.getOnlinePlayers()) {
-			if(player.getInventory().firstEmpty() < 0) {
-				player.getWorld().dropItem(player.getLocation(), item);
-			} else {
-				player.getInventory().addItem(item);
-				player.updateInventory();
+			if(!(player.equals(player_that_died))) {
+				if(player.getInventory().firstEmpty() < 0) {
+					player.getWorld().dropItem(player.getLocation(), item);
+				} else {
+					player.getInventory().addItem(item);
+					player.updateInventory();
+				}
 			}
 		}
 		lore.clear();
