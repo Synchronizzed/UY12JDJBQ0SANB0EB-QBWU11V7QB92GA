@@ -1,0 +1,5 @@
+# Made by RandomHashTags and Yoyo
+version: 1.0
+authors: [RandomHashTags, Yoyo]
+name: LegacyCloud
+main: development.legacyCloud.randomHashTags.yoyo.LegacyCloud
