@@ -16,7 +16,16 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.craftbukkit.libs.jline.internal.Log.Level;
 
 import core.components.Component;
+import core.components.chat.Chat;
+import core.components.coords.Coords;
+import core.components.deathsigns.DeathSigns;
 import core.components.enchantlimiting.EnchantLimiting;
+import core.components.enderchests.EnderChest;
+import core.components.firstjoin.FirstJoin;
+import core.components.foundore.FoundOre;
+import core.components.gapples.Gapple;
+import core.components.pearls.Pearls;
+import core.components.xp.XP;
 
 public class ComponentRegistration {
 	
@@ -89,6 +98,15 @@ public class ComponentRegistration {
 	
 	private void registerComponent(){
 		this.listOfModules.add(new EnchantLimiting());
+		this.listOfModules.add(new DeathSigns());
+		this.listOfModules.add(new Coords());
+		this.listOfModules.add(new EnderChest());
+		this.listOfModules.add(new FirstJoin());
+		this.listOfModules.add(new FoundOre());
+		this.listOfModules.add(new XP());
+		this.listOfModules.add(new Gapple());
+		this.listOfModules.add(new Chat());
+		this.listOfModules.add(new Pearls());
 	}
 	
 	public void onEnable(){

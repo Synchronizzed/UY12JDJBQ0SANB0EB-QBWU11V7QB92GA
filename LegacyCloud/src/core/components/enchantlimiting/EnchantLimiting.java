@@ -1,16 +1,12 @@
 package core.components.enchantlimiting;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import org.bukkit.Bukkit;
 import org.bukkit.enchantments.Enchantment;
-import org.bukkit.plugin.PluginManager;
 
-import core.LegacyCloud;
 import core.components.Component;
 import core.components.enchantlimiting.events.AnvilEvent;
 import core.components.enchantlimiting.events.EnchantingEvent;

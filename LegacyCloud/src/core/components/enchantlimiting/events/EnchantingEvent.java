@@ -10,7 +10,7 @@ import org.bukkit.event.enchantment.EnchantItemEvent;
 
 import core.components.enchantlimiting.EnchantLimiting;
 
-public class EnchantingEvent implements Listener{
+public final class EnchantingEvent implements Listener{
 	
 	@EventHandler(priority = EventPriority.HIGH)
 	public void onEnchantItem(EnchantItemEvent event){

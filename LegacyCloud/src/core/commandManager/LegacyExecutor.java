@@ -28,7 +28,7 @@ public class LegacyExecutor implements CommandExecutor{
 				 module.run(sender, args);
 			 }
 			 else{
-				 sender.sendMessage(ChatColor.RED + module.usage);
+				 sender.sendMessage(ChatColor.RED + "Usage: "+ module.usage);
 			 }
 		}
 		return true;

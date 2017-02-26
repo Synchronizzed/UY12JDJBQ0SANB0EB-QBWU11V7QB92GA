@@ -1,3 +1,15 @@
 main: core.LegacyCloud
 version: 1.0.0
 name: LegacyCloudCore
+
+commands:
+  coords:
+    usage: /coords
+  xp:
+    usage: /xp
+  slowchat:
+    usage: /slowchat
+  clearchat:
+    usage: /clearchat
+  lockchat:
+    usage: /lockchat

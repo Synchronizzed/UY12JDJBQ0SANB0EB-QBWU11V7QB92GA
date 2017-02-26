@@ -81,5 +81,12 @@ public abstract class Component {
 	public void addEvent(Listener listener){
 		pm.registerEvents(listener, LegacyCloud.getInstance());
 	}
+	
+	public void enableMessage(String title){
+		Bukkit.getLogger().info(title + " module has been enabled!");
+	}
+	public void disableMessage(String title){
+		Bukkit.getLogger().info(title + " module has been disabled!");
+	}
 
 }

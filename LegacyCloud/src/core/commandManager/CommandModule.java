@@ -4,6 +4,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 
 import core.LegacyCloud;
+import core.commandManager.LegacyExecutor;
 
 public abstract class CommandModule {
 	

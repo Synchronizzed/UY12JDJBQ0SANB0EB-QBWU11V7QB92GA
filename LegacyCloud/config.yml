@@ -1,3 +1,6 @@
-enchantlimits:
-  - DURABILITY:1
-  - DAMAGE_ALL:3
+chat:
+  slow: 15
+gapple:
+  cooldown: 300
+pearls:
+  cooldown: 15

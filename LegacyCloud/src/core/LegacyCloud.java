@@ -1,5 +1,6 @@
 package core;
 
+import java.util.HashMap;
 import java.util.Map;
 
 import org.bukkit.Bukkit;
@@ -10,15 +11,18 @@ import core.commandManager.CommandModule;
 
 public class LegacyCloud extends JavaPlugin {
 	
-	private static LegacyCloud instance;
+	private static LegacyCloud instance = null;
 	
-	public static Map<String, CommandModule> commands;
+	public static Map<String, CommandModule> commands = new HashMap<>();
 	
 	/**
 	 * Singleton pattern, returns the instance of JavaPlugin
 	 * @return instance of JavaPlugin
 	 */
 	public static LegacyCloud getInstance(){
+		if(instance==null){
+			Bukkit.getLogger().warning("shit happens");
+		}
 		return instance;
 	}
 	
