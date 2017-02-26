@@ -16,6 +16,7 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.craftbukkit.libs.jline.internal.Log.Level;
 
 import core.components.Component;
+import core.components.bookdisenchant.BookDisenchant;
 import core.components.chat.Chat;
 import core.components.coords.Coords;
 import core.components.deathsigns.DeathSigns;
@@ -107,6 +108,7 @@ public class ComponentRegistration {
 		this.listOfModules.add(new Gapple());
 		this.listOfModules.add(new Chat());
 		this.listOfModules.add(new Pearls());
+		this.listOfModules.add(new BookDisenchant());
 	}
 	
 	public void onEnable(){

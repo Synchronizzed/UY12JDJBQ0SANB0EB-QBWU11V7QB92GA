@@ -19,7 +19,7 @@ public class ThrowPearl implements Listener {
 		if(action == Action.RIGHT_CLICK_BLOCK || action == Action.RIGHT_CLICK_AIR){
 			if(event.getMaterial() != Material.ENDER_PEARL) return;
 			
-			System.out.println("hi");
+			//System.out.println("hi");
 			
 			Player player = event.getPlayer();
 			String playerName = player.getName();

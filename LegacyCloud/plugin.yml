@@ -13,3 +13,5 @@ commands:
     usage: /clearchat
   lockchat:
     usage: /lockchat
+  bookdisenchant:
+    usage: /bookdisenchant

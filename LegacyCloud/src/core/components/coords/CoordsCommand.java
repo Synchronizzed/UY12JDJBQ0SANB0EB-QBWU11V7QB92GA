@@ -1,5 +1,6 @@
 package core.components.coords;
 
+import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 
 import core.commandManager.CommandModule;
@@ -13,8 +14,8 @@ public class CoordsCommand extends CommandModule{
 
 	@Override
 	public void run(CommandSender sender, String[] args) {
-		sender.sendMessage("--- Coordinates ---");
-		Coords.getInstance().listOfCoords.forEach(e -> sender.sendMessage(e));
+		sender.sendMessage(ChatColor.RED + "--- Coordinates ---");
+		Coords.getInstance().listOfCoords.forEach(e -> sender.sendMessage(ChatColor.GRAY + e));
 	}
 	
 	

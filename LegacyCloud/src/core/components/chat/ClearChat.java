@@ -2,6 +2,7 @@ package core.components.chat;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
 
 import core.commandManager.CommandModule;
 
@@ -15,8 +16,10 @@ public class ClearChat extends CommandModule{
 	@Override
 	public void run(CommandSender sender, String[] args) {
 		
-		for(int i = 0; i<100; i++){
-			Bukkit.broadcastMessage("");
+		for(Player player: Bukkit.getOnlinePlayers()){
+			for(int i = 0; i<100; i++){
+				player.sendMessage("");
+			}
 		}
 		
 	}
