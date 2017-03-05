@@ -20,6 +20,7 @@ import core.components.bookdisenchant.BookDisenchant;
 import core.components.chat.Chat;
 import core.components.coords.Coords;
 import core.components.cps.CPS;
+import core.components.corecmd.CoreCmdLoader;
 import core.components.deathsigns.DeathSigns;
 import core.components.enchantlimiting.EnchantLimiting;
 import core.components.enderchests.EnderChest;
@@ -110,7 +111,9 @@ public class ComponentRegistration {
 		this.listOfModules.add(new Chat());
 		this.listOfModules.add(new Pearls());
 		this.listOfModules.add(new BookDisenchant());
+		this.listOfModules.add(new CoreCmdLoader());
 		this.listOfModules.add(new CPS());
+
 	}
 	
 	public void onEnable(){
