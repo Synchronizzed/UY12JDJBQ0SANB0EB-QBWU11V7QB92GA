@@ -15,6 +15,7 @@ public class CoreCmdLoader extends Component{
 	@Override
 	public void onEnable() {
 
+		cmd = this;
 		list = Lists.newArrayList();
 		assembleList();
 		new CoreCmd("legacycore", 0, 1, "Get information about the LegacyCore core.");
