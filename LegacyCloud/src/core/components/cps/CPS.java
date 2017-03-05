@@ -32,7 +32,8 @@ public class CPS extends Component {
 	        pl = LegacyCloud.getInstance();
 	    	
 	        this.addEvent(new CPSEvent());
-	       
+	        
+	        new CPSRateCmd("cps", 0, 0, "/cps <player>");
 	       
 	 
 	        cC = Maps.newHashMap();

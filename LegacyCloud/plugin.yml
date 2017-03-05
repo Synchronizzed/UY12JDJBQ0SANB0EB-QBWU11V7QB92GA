@@ -1,6 +1,7 @@
 main: core.LegacyCloud
 version: 1.0.0
 name: LegacyCloudCore
+#authors: [Yoyo_,JohnKZ]
 
 commands:
   coords:
@@ -15,3 +16,5 @@ commands:
     usage: /lockchat
   bookdisenchant:
     usage: /bookdisenchant
+  cps:
+    usage: /cps <player>

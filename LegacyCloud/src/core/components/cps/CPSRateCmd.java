@@ -34,7 +34,7 @@ public class CPSRateCmd extends CommandModule {
                     
                 }
                 
-                sender.sendMessage(args[0] + " is not a valid player");
+                sender.sendMessage(ChatColor.RED + args[0] + " is not a valid player");
     }
 
 	

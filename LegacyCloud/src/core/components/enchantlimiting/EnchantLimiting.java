@@ -1,5 +1,6 @@
 package core.components.enchantlimiting;
 
+import java.util.EnumMap;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Logger;
@@ -32,7 +33,7 @@ public class EnchantLimiting extends Component{
 
 	@Override
 	public void onEnable() {
-		Bukkit.getLogger().info("EnchantLimiting is enabled!");
+		this.enableMessage("EnchantLimiting");
 		
 		instance = this;
 		
@@ -51,7 +52,7 @@ public class EnchantLimiting extends Component{
 
 	@Override
 	public void onDisable() {
-		Bukkit.getLogger().info("EnchantLimiting is disabled!");
+		this.enableMessage("EnchantLimiting");
 
 	}
 	

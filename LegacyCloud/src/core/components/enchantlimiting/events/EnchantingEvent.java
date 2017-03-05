@@ -17,7 +17,7 @@ public final class EnchantingEvent implements Listener{
 		Map<Enchantment, Integer> mapOfEnchants = EnchantLimiting.getInstance().limits;
 		event.getEnchantsToAdd().keySet()
 		.stream()
-		.filter(e -> mapOfEnchants.containsKey(e))
+		.filter(mapOfEnchants::containsKey)
 		.forEach(e -> {
 			int level = mapOfEnchants.get(e);
 			if(event.getEnchantsToAdd().get(e)>level){
